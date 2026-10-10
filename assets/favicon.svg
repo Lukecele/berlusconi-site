@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="1.5" />
+  <!-- Stylized Sun & SB Monogram -->
+  <circle cx="24" cy="24" r="14" stroke="url(#goldGrad)" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.6" />
+  <path d="M16 16H23C25.5 16 27 17.2 27 19.5C27 21.5 25.8 22.5 24 23C26.2 23.5 27.5 24.8 27.5 27.2C27.5 29.8 25.5 31.5 22.5 31.5H16V16ZM19.2 22.3H22.5C23.8 22.3 24.5 21.6 24.5 20.4C24.5 19.2 23.8 18.5 22.5 18.5H19.2V22.3ZM19.2 29H22.7C24.2 29 25 28.2 25 26.8C25 25.4 24.2 24.6 22.7 24.6H19.2V29Z" fill="url(#goldGrad)" filter="url(#glow)" />
+  <circle cx="32" cy="17" r="2.5" fill="#FDE047" filter="url(#glow)" />
+</svg>

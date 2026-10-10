@@ -1,0 +1,40 @@
+{
+  "name": "Silvio Berlusconi | Visione, Grinta & Successo",
+  "short_name": "Berlusconi",
+  "description": "Portale celebrativo su leadership, ottimismo pragmatico, grandi imprese e citazioni motivazionali di Silvio Berlusconi.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#040711",
+  "theme_color": "#040711",
+  "orientation": "portrait-primary",
+  "lang": "it-IT",
+  "dir": "ltr",
+  "categories": ["education", "lifestyle", "sports"],
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

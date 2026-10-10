@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Silvio Berlusconi | "Da Ogni Male Deve Nascere un Gran Bene" – Il Sole in Tasca & Grinta da Campione</title>
+  
+  <!-- SEO & Accessibility Metadata -->
+  <meta name="description" content="«Da ogni male deve nascere un gran bene, un entusiasmo maggiore, una voglia incontenibile di riuscire.» Il manifesto motivazionale di Silvio Berlusconi: resilienza da combattente, ottimismo incrollabile e storiche imprese." />
+  <meta name="keywords" content="Silvio Berlusconi, da ogni male deve nascere un gran bene, sole in tasca, motivazionale rocky balboa, chi ci crede vince, resilienza, determinazione, milan, mediaset" />
+  <meta name="author" content="Silvio Berlusconi - Visione, Resilienza & Successo" />
+  <meta name="theme-color" content="#040711" />
+  <link rel="canonical" href="https://berlusconi-site.vercel.app/" />
+
+  <!-- PWA Manifest & App Icons -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Berlusconi" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://berlusconi-site.vercel.app/" />
+  <meta property="og:title" content="«Da ogni male deve nascere un gran bene!» | Silvio Berlusconi" />
+  <meta property="og:description" content="Non importa quante volte la vita provi a metterti all'angolo: da ogni caduta deve nascere un entusiasmo maggiore, una grinta indomabile, sempre con il sole in tasca. Guarda il discorso motivazionale." />
+  <meta property="og:image" content="https://berlusconi-site.vercel.app/assets/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="it_IT" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://berlusconi-site.vercel.app/" />
+  <meta name="twitter:title" content="«Da ogni male deve nascere un gran bene!» | Silvio Berlusconi" />
+  <meta name="twitter:description" content="La resilienza pura, la mentalità da combattente che non arretra mai e l'incrollabile forza del sole in tasca." />
+  <meta name="twitter:image" content="https://berlusconi-site.vercel.app/assets/og-image.svg" />
+
+  <!-- Performance: Preconnect & Font Display Swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  
+  <!-- Icone Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Ambient Atmospheric Lighting -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav-container" aria-label="Navigazione principale">
+    <div class="nav-content">
+      <a href="#" class="nav-logo" aria-label="Torna in cima alla pagina">
+        <img src="assets/favicon.svg" alt="Monogramma dorato SB" width="44" height="44" class="logo-img" />
+        <div class="logo-text-group">
+          <span class="logo-title">Silvio Berlusconi</span>
+          <span class="logo-sub">Resilienza • Grinta • Successo</span>
+        </div>
+      </a>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#discorso-rocky" class="nav-link special-link"><i data-lucide="flame"></i> Il Discorso</a>
+        <a href="#visione" class="nav-link">Filosofia</a>
+        <a href="#citazioni" class="nav-link">Massime</a>
+        <a href="#imprese" class="nav-link">Le Imprese</a>
+        <a href="#video" class="nav-link">Video Storici</a>
+      </div>
+
+      <a href="#discorso-rocky" class="nav-cta">
+        <i data-lucide="zap"></i>
+        <span>Spirito da Campione</span>
+      </a>
+
+      <!-- Mobile Hamburger Button with proper ARIA attributes -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Apri o chiudi il menu di navigazione" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Overlay & Sheet -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Menu navigazione mobile">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <img src="assets/favicon.svg" alt="SB" width="32" height="32" />
+        <span>Menu di Navigazione</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Chiudi menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <div class="drawer-links">
+      <a href="#discorso-rocky" class="drawer-link"><i data-lucide="flame"></i> Il Discorso Motivazionale</a>
+      <a href="#visione" class="drawer-link"><i data-lucide="sparkles"></i> Filosofia & Visione</a>
+      <a href="#citazioni" class="drawer-link"><i data-lucide="quote"></i> Massime da Combattente</a>
+      <a href="#imprese" class="drawer-link"><i data-lucide="award"></i> Grandi Imprese</a>
+      <a href="#video" class="drawer-link"><i data-lucide="play-circle"></i> Momenti Storici</a>
+    </div>
+
+    <div class="drawer-footer">
+      <p class="drawer-quote">«Da ogni male deve nascere un gran bene.»</p>
+      <span class="drawer-tag">☀️ Sempre con il sole in tasca</span>
+    </div>
+  </div>
+
+  <!-- SEZIONE PRINCIPALE DISCORSO / HERO ROCKY BALBOA STYLE -->
+  <header class="hero-rocky" id="discorso-rocky">
+    <div class="container">
+      <div class="rocky-badge-wrap">
+        <div class="rocky-badge">
+          <i data-lucide="flame" class="fire-icon"></i>
+          <span>La Grinta Indomabile • Mentalità da Campione</span>
+        </div>
+      </div>
+
+      <h1 class="rocky-headline">
+        «DA OGNI MALE DEVE NASCERE<br />
+        <span class="fire-gradient">UN GRAN BENE.</span>»
+      </h1>
+
+      <p class="rocky-subhead">
+        La vita può colpire duro, gli ostacoli possono sembrare insormontabili. Ma è proprio nel momento della prova che scatta la determinazione assoluta: <strong>incassare, rialzarsi più forti di prima e trasformare ogni difficoltà in una carica inarrestabile</strong>.
+      </p>
+
+      <!-- CARD SPECIALE DEL DISCORSO MANIFESTO -->
+      <div class="speech-manifesto-card">
+        <div class="manifesto-grid">
+          
+          <!-- Colonna Sinistra: Player Reel Facebook Reale -->
+          <div class="reel-embed-column">
+            <div class="reel-player-frame">
+              <iframe 
+                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A//www.facebook.com/reel/2022737805067157/&show_text=false&width=267&t=0" 
+                width="267" 
+                height="476" 
+                loading="eager"
+                style="border:none;overflow:hidden" 
+                scrolling="no" 
+                frameborder="0" 
+                allowfullscreen="true" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                title="Discorso Motivazionale: Da ogni male deve nascere un gran bene">
+              </iframe>
+            </div>
+            <a href="https://www.facebook.com/reel/2022737805067157/" target="_blank" rel="noopener noreferrer" class="reel-external-btn">
+              <i data-lucide="play-circle"></i>
+              <span>Guarda su Facebook (260k+ visualizzazioni)</span>
+            </a>
+          </div>
+
+          <!-- Colonna Destra: Le Parole Esatte & Analisi Rocky-Mindset -->
+          <div class="manifesto-text-column">
+            <div class="rocky-corner-tag">
+              <i data-lucide="shield-alert"></i>
+              <span>Le Parole del Video</span>
+            </div>
+
+            <div class="quote-rocky-block">
+              <div class="quote-marker" aria-hidden="true">“</div>
+              <p class="quote-rocky-line highlight-lead">
+                Da ogni male deve nascere un gran bene.
+              </p>
+              <p class="quote-rocky-line">
+                Da ogni male deve venire <strong>un entusiasmo maggiore</strong>, una speranza maggiore, una grande voglia di riuscire, di conseguire il proprio traguardo.
+              </p>
+              <p class="quote-rocky-line">
+                Ho coniato un giorno uno slogan: <em>lo dovete sempre avere il sole in tasca</em> e tirarlo fuori al momento giusto. Offrirlo con un sorriso a tutte le persone con cui venite a contatto.
+              </p>
+              <p class="quote-rocky-line final-punch">
+                Questa è una regola di vita di generosità che vi renderà possibile realizzare grandi risultati. <strong>Solo chi ci crede combatte e vince!</strong>
+              </p>
+            </div>
+
+            <!-- I 3 Pilastri della Resilienza da Ring -->
+            <div class="fight-pillars">
+              <div class="fight-pillar-item">
+                <div class="fp-icon"><i data-lucide="dumbbell"></i></div>
+                <div>
+                  <strong>Incassare & Reagire</strong>
+                  <p>Non farsi abbattere da nessun colpo, ma usarlo come leva per spingere il doppio.</p>
+                </div>
+              </div>
+              <div class="fight-pillar-item">
+                <div class="fp-icon"><i data-lucide="sun"></i></div>
+                <div>
+                  <strong>Il Sole in Tasca</strong>
+                  <p>Non mostrare mai la debolezza dello sconforto: donare fiducia, energia e coraggio.</p>
+                </div>
+              </div>
+              <div class="fight-pillar-item">
+                <div class="fp-icon"><i data-lucide="trophy"></i></div>
+                <div>
+                  <strong>La Vittoria Finale</strong>
+                  <p>La convinzione interiore che chi lotta fino all'ultimo secondo, alla fine trionfa.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Sezione Ritratto Storico & Filosofia di Vita -->
+  <section class="section portrait-philosophy" id="visione">
+    <div class="container">
+      <div class="philosophy-grid">
+        <div class="philosophy-text">
+          <span class="section-tag">Filosofia d'Azione</span>
+          <h2 class="section-title">L'Arte di Non Mollare Mai</h2>
+          <p class="lead-text">
+            Per oltre mezzo secolo di carriera imprenditoriale ed istituzionale, ogni volta che critici e avversari davano una sfida per persa o impossibile, Silvio Berlusconi ha ribaltato le previsioni moltiplicando l'impegno.
+          </p>
+          <p class="desc-text">
+            Dal quartiere modello di Milano 2 quando tutti consideravano folle un'urbanistica senza incroci stradali, alla creazione di tre canali TV commerciali contro il monopolio della Rai, fino all'acquisizione del Milan a un passo dal fallimento, portato a vincere 5 Champions League.
+          </p>
+
+          <div class="stats-counter-bar">
+            <div class="sc-item">
+              <span class="sc-number">29</span>
+              <span class="sc-label">Trofei Conquistati col Milan</span>
+            </div>
+            <div class="sc-divider"></div>
+            <div class="sc-item">
+              <span class="sc-number">1°</span>
+              <span class="sc-label">Polo TV Libero d'Europa</span>
+            </div>
+            <div class="sc-divider"></div>
+            <div class="sc-item">
+              <span class="sc-number">50.000+</span>
+              <span class="sc-label">Posti di Lavoro Generati</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-visual">
+          <div class="portrait-card-elevated">
+            <div class="portrait-frame-modern">
+              <img src="assets/images/berlusconi_portrait.jpg" alt="Silvio Berlusconi Ritratto Ufficiale" width="539" height="734" class="portrait-img-main" loading="lazy" />
+              <div class="portrait-gradient-shade"></div>
+              <div class="portrait-floating-tag">
+                <i data-lucide="sun"></i>
+                <span>"Il Dovere dell'Ottimismo"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Citazioni con Filtri Interattivi -->
+  <section class="section quotes-section" id="citazioni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Massime & Mantra da Combattente</span>
+        <h2 class="section-title">Parole che Caricano di Energia</h2>
+        <p class="section-subtitle">
+          Le frasi pronunciate prima delle grandi battaglie sportive, nelle assemblee con i collaboratori e nei momenti di svolta.
+        </p>
+      </div>
+
+      <!-- Filtri Categoria con accessibilità tastiera -->
+      <div class="category-filters" id="categoryFilters" role="tablist" aria-label="Filtra citazioni per categoria">
+        <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">Tutte le Massime</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="Determinazione">Grinta & Resilienza</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="Leadership">Dovere dell'Ottimismo</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="Visione di Vita">Il Sole in Tasca</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="Traguardi Sportivi">Mentalità Vincente</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="Innovazione">Coraggio Imprenditoriale</button>
+      </div>
+
+      <!-- Quotes Cards Grid -->
+      <div class="quotes-grid" id="quote-list" aria-live="polite">
+        <!-- Renderizzato via JavaScript con icone dinamiche -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Grandi Imprese Storiche -->
+  <section class="section enterprises-section" id="imprese">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Le Sfide Ritenute Impossibili</span>
+        <h2 class="section-title">Le Grandi Imprese Storiche</h2>
+        <p class="section-subtitle">
+          Tappe fondamentali in cui il coraggio pionieristico ha sconfitto lo scetticismo generale trasformando sogni audaci in pietre miliari.
+        </p>
+      </div>
+
+      <div class="enterprise-cards">
+        <!-- Impresa 1: Milano 2 -->
+        <article class="enterprise-card">
+          <div class="card-icon-wrapper blue">
+            <i data-lucide="building-2"></i>
+          </div>
+          <div class="card-badge">Anni '70</div>
+          <h3>Milano 2: La Città Giardino a Misura d'Uomo</h3>
+          <p>
+            Contro ogni scetticismo edilizio dell'epoca, progettò un quartiere residenziale all'avanguardia: totale separazione fra pedoni e automobili, specchi d'acqua, giardini continui e la prima rete via cavo locale in Italia.
+          </p>
+          <ul class="card-highlights">
+            <li><i data-lucide="check"></i> Architettura focalizzata sulla qualità di vita</li>
+            <li><i data-lucide="check"></i> Piste ciclabili e sicurezza totale per i bambini</li>
+          </ul>
+        </article>
+
+        <!-- Impresa 2: Mediaset -->
+        <article class="enterprise-card featured">
+          <div class="card-featured-tag">Rivoluzione Culturale</div>
+          <div class="card-icon-wrapper gold">
+            <i data-lucide="tv"></i>
+          </div>
+          <div class="card-badge">1978 - 1984</div>
+          <h3>La Televisione Libera e Plurale</h3>
+          <p>
+            Rompere il monopolio della TV pubblica sembrava un'utopia giuridica e tecnologica. Con Canale 5, Italia 1 e Rete 4 ha regalato al pubblico italiano varietà, film internazionali, cartoni animati epici e grande sport gratuito.
+          </p>
+          <ul class="card-highlights">
+            <li><i data-lucide="check"></i> Creazione di Publitalia '80 e rilancio del tessuto produttivo</li>
+            <li><i data-lucide="check"></i> Centinaia di format che hanno accompagnato intere generazioni</li>
+          </ul>
+        </article>
+
+        <!-- Impresa 3: Milan -->
+        <article class="enterprise-card">
+          <div class="card-icon-wrapper red">
+            <i data-lucide="trophy"></i>
+          </div>
+          <div class="card-badge">1986 - 2017</div>
+          <h3>Il Milan dei Record: Sul Tetto del Mondo</h3>
+          <p>
+            Rilevato in tribunale nel 1986, promise di farne il club più forte e spettacolare della Terra. In 31 anni ha conquistato 29 trofei ufficiali, 5 Coppe dei Campioni / Champions League e 8 Scudetti, incantando gli appassionati di calcio di ogni continente.
+          </p>
+          <ul class="card-highlights">
+            <li><i data-lucide="check"></i> Rivoluzione tattica con Sacchi, Capello e Ancelotti</li>
+            <li><i data-lucide="check"></i> Esempio universale di gioco offensivo ed eleganza</li>
+          </ul>
+        </article>
+
+        <!-- Impresa 4: Editoria e Finanza -->
+        <article class="enterprise-card">
+          <div class="card-icon-wrapper purple">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <div class="card-badge">Anni '90 - Oggi</div>
+          <h3>Arnoldo Mondadori & Banca Mediolanum</h3>
+          <p>
+            La difesa del primo patrimonio letterario nazionale con Mondadori e la straordinaria intuizione con Ennio Doris per una finanza vicina alle persone con Banca Mediolanum, fondata sulla fiducia, l'umanità e la trasparenza.
+          </p>
+          <ul class="card-highlights">
+            <li><i data-lucide="check"></i> Custodia della grande cultura del libro in Italia</li>
+            <li><i data-lucide="check"></i> Un modello bancario "costruito intorno a te"</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galleria d'Epoca Anni '80 -->
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="gallery-card-highlight">
+        <div class="gallery-text-col">
+          <span class="section-tag">Foto d'Archivio • Anni '80</span>
+          <h3>L'Energia delle Origini: Riunioni al Fulmicotone</h3>
+          <p>
+            Uno scatto autentico d'archivio che immortala la grinta travolgente degli inizi: giornate di lavoro interminabili, motivazione continua trasmessa ai collaboratori e la ferrea determinazione di non accettare mai la parola "impossibile".
+          </p>
+          <div class="gallery-quote">
+            <i data-lucide="flame"></i>
+            <span>«Quando tutti ti dicono che una cosa non si può fare, è proprio il segnale che devi essere tu il primo a realizzarla.»</span>
+          </div>
+        </div>
+        <div class="gallery-image-col">
+          <div class="image-frame-vintage">
+            <img src="assets/images/berlusconi_imprenditore_80s.jpg" alt="Silvio Berlusconi al lavoro negli anni Ottanta" width="800" height="600" class="vintage-img" loading="lazy" />
+            <div class="vintage-badge">Archivio Storico Fininvest</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Video Motivazionali & Discorsi Emozionanti (IFRAME) -->
+  <section class="section video-section" id="video">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Video e Discorsi Storici</span>
+        <h2 class="section-title">I Discorsi che Hanno Fatto la Storia</h2>
+        <p class="section-subtitle">
+          Guarda direttamente gli interventi originali più memorabili ed emozionanti.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1: Il Dovere dell'Ottimismo -->
+        <div class="video-card">
+          <div class="iframe-container">
+            <iframe 
+              src="https://www.youtube.com/embed/CIK4Jjgk3bo?rel=0" 
+              title="Silvio Berlusconi - Siate positivi, un imprenditore ha il dovere dell'ottimismo" 
+              loading="lazy" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span class="badge-cat">Leadership & Mindset</span>
+              <span class="video-duration"><i data-lucide="sun"></i> Fondamentale</span>
+            </div>
+            <h4>"Un imprenditore ha il dovere morale dell'ottimismo"</h4>
+            <p>
+              Perché la positività non è illusione ma la conditio sine qua non per mobilitare le migliori energie e superare qualsiasi tempesta.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 2: Discorso Storico 1994 -->
+        <div class="video-card">
+          <div class="iframe-container">
+            <iframe 
+              src="https://www.youtube.com/embed/aStF2b5ryJg?rel=0" 
+              title="Silvio Berlusconi – Discorso storico 26 gennaio 1994" 
+              loading="lazy" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span class="badge-cat">Pietra Miliare</span>
+              <span class="video-duration"><i data-lucide="clock"></i> 26 Gennaio 1994</span>
+            </div>
+            <h4>"L'Italia è il paese che amo"</h4>
+            <p>
+              Il discorso che ha inaugurato una nuova era della comunicazione pubblica, incentrato sui valori operosi della famiglia, del lavoro e della libertà di intrapresa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 3: Il mantra "Chi ci crede vince" -->
+        <div class="video-card">
+          <div class="iframe-container">
+            <iframe 
+              src="https://www.youtube.com/embed/bUtPwJ7LVCk?rel=0" 
+              title="Silvio Berlusconi – Chi ci crede vince sempre" 
+              loading="lazy" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span class="badge-cat">Grinta Sportiva</span>
+              <span class="video-duration"><i data-lucide="trophy"></i> Motivazione Pura</span>
+            </div>
+            <h4>"Chi ci crede combatte e vince"</h4>
+            <p>
+              L'arringa motivazionale leggendaria: non accontentarsi di partecipare, ma scendere in campo per dominare il gioco con fierezza.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 4: Come raggiungere gli obiettivi -->
+        <div class="video-card">
+          <div class="iframe-container">
+            <iframe 
+              src="https://www.youtube.com/embed/5R8-5msuDqE?rel=0" 
+              title="Silvio Berlusconi – Come raggiungere il successo e realizzare i tuoi obiettivi" 
+              loading="lazy" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-meta">
+              <span class="badge-cat">Lezione di Metodo</span>
+              <span class="video-duration"><i data-lucide="compass"></i> Formazione</span>
+            </div>
+            <h4>I consigli pratici per realizzare i propri sogni</h4>
+            <p>
+              La cura meticolosa di ogni particolare, il rispetto della parola data e la dedizione assoluta agli obiettivi prefissati.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Daily Inspiration Box -->
+  <section class="section inspiration-banner">
+    <div class="container">
+      <div class="inspiration-box">
+        <div class="box-content">
+          <span class="mini-label">
+            <i data-lucide="sun"></i> Pillola di Grinta Quotidiana
+          </span>
+          <h3 id="dailyQuoteText">"Da ogni male deve nascere un gran bene. Da ogni male deve venire un entusiasmo maggiore, una speranza maggiore, una grande voglia di riuscire!"</h3>
+          <p id="dailyQuoteContext">– Dal messaggio motivazionale sulla forza dell'ottimismo</p>
+          <button class="btn btn-primary" id="newQuoteBtn" aria-label="Mostra una nuova citazione motivazionale">
+            <i data-lucide="refresh-cw"></i>
+            <span>Altra Carica di Energia</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="assets/favicon.svg" alt="Monogramma SB" width="36" height="36" class="logo-img-small" />
+          <div class="logo-text-group">
+            <span class="logo-title">Silvio Berlusconi</span>
+            <span class="logo-sub">Visione • Resilienza • Successo</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Portale celebrativo dedicato alla determinazione, alla mentalità vincente e alla straordinaria capacità di rinascere più forti di fronte a qualsiasi ostacolo.
+        </p>
+        <div class="footer-pill">
+          <span>🥊 "Da ogni male deve nascere un gran bene" • ☀️ "Sempre con il sole in tasca"</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-col">
+          <strong>Navigazione</strong>
+          <a href="#discorso-rocky">Il Discorso Rocky-Style</a>
+          <a href="#visione">Filosofia di Vita</a>
+          <a href="#citazioni">Massime Motivazionali</a>
+          <a href="#imprese">Grandi Imprese</a>
+          <a href="#video">Momenti Storici</a>
+        </div>
+        <div class="link-col">
+          <strong>I Valori Chiave</strong>
+          <span>Resilienza da Combattente</span>
+          <span>Il Dovere dell'Ottimismo</span>
+          <span>Spirito di Generosità</span>
+          <span>Cultura della Vittoria</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sezione Note Legali & Disclaimer Trasparenza (GDPR / Fair Use) -->
+    <div class="container">
+      <div class="footer-disclaimer-card">
+        <h5><i data-lucide="shield-check"></i> Trasparenza, Finalità & Note Legali</h5>
+        <p>
+          <strong>Natura del sito:</strong> Portale autonomo a carattere esclusivamente culturale, storico, didattico e motivazionale. Non costituisce testata giornalistica e non ha fini di lucro.<br />
+          <strong>Assenza di affiliazione:</strong> Il presente sito non è in alcun modo affiliato, autorizzato, sponsorizzato né gestito dagli eredi di Silvio Berlusconi, da Fininvest S.p.A., da MFE-MediaForEurope / Mediaset, dall'AC Milan o da altre entità commerciali citate.<br />
+          <strong>Proprietà intellettuale e Marchi:</strong> Marchi, loghi societari e denominazioni commerciali appartengono ai rispettivi titolari e sono utilizzati unicamente a scopo identificativo, documentale e storiografico (art. 20 D.Lgs. 30/2005 - C.P.I. e principio di <em>nominative fair use</em>). I filmati incorporati tramite <code>iframe</code> rimangono di esclusiva proprietà dei rispettivi canali e piattaforme di origine (YouTube / Meta), in piena conformità con le direttive UE (sentenze CGUE <em>Svensson</em> C-466/12 e <em>BestWater</em> C-348/13).
+        </p>
+        <div class="legal-links-row">
+          <button class="legal-link-btn" id="openPrivacyBtn">Informativa Privacy & Trattamento Dati</button>
+          <span>•</span>
+          <button class="legal-link-btn" id="openCookieBtn">Informativa Cookie & Preferenze</button>
+          <span>•</span>
+          <button class="legal-link-btn" id="openCopyrightBtn">Diritto d'Autore & Fair Use</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-flex">
+        <p>© 2026 Silvio Berlusconi: Sempre con il Sole in Tasca. PWA Ready • Conforme a GDPR & Direttiva ePrivacy.</p>
+        <button class="back-to-top" id="backToTop" aria-label="Torna in cima alla pagina">
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GDPR Cookie Banner (Informativa Breve con Blocco Preventivo) -->
+  <div class="cookie-banner" id="cookieBanner" role="region" aria-label="Consenso Cookie e Privacy">
+    <div class="cookie-content">
+      <div class="cookie-icon">
+        <i data-lucide="cookie"></i>
+      </div>
+      <div class="cookie-text">
+        <h4>Tutela della Privacy & Cookie</h4>
+        <p>
+          Questo portale utilizza esclusivamente cookie tecnici essenziali e il Service Worker per garantire la fruizione offline e la massima velocità. Non impieghiamo cookie di profilazione o tracciamento pubblicitario. I video incorporati (YouTube / Facebook) sono configurati nel rispetto della tua privacy. Consulta la nostra <a id="cookieBannerLink">Informativa Estesa</a> per maggiori dettagli.
+        </p>
+        <div class="cookie-actions">
+          <button class="btn-cookie-accept" id="acceptCookiesBtn">Accetto e Chiudi</button>
+          <button class="btn-cookie-reject" id="rejectCookiesBtn">Solo Tecnici</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modale Legale Dettagliata (Privacy Policy, Cookie & Diritti) -->
+  <div class="legal-modal-overlay" id="legalModalOverlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="legalModalTitle">
+    <div class="legal-modal">
+      <div class="modal-header">
+        <h3 id="legalModalTitle"><i data-lucide="shield"></i> Informativa Legale, Privacy & Cookie</h3>
+        <button class="modal-close-btn" id="closeLegalModal" aria-label="Chiudi finestra modale">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h4>1. Titolare del Trattamento e Finalità</h4>
+        <p>
+          Il sito <em>berlusconi-site.vercel.app</em> è un progetto divulgativo, culturale e motivazionale no-profit. Il sito non richiede la registrazione degli utenti, non dispone di aree riservate e non raccoglie dati personali identificativi (quali nome, cognome, indirizzo email o recapiti telefonici).
+        </p>
+
+        <h4>2. Tipologie di Cookie e Dati Tecnici</h4>
+        <p>
+          In conformità al Regolamento UE 2016/679 (GDPR) e alle Linee Guida Cookie del Garante Privacy:
+        </p>
+        <ul>
+          <li><strong>Cookie Tecnici Essenziali:</strong> Utilizzati per memorizzare la scelta del consenso ai cookie (<code>sb_cookie_consent</code>) e abilitare il funzionamento offline tramite <em>Progressive Web App Service Worker</em>. Non richiedono consenso preventivo.</li>
+          <li><strong>Cookie di Terze Parti (Embed Multimediali):</strong> Il sito incorpora contenuti di YouTube (modalità enhanced privacy <code>rel=0</code>) e Facebook Plugins. Tali piattaforme esterne potrebbero installare cookie tecnici o di sessione per gestire la riproduzione video secondo le rispettive privacy policy di Google/YouTube e Meta Platforms Ireland Ltd.</li>
+          <li><strong>Zero Cookie di Profilazione Proprietari:</strong> Il sito non monetizza né cede alcun dato a terzi per scopi promozionali.</li>
+        </ul>
+
+        <h4>3. Diritto d'Immagine, Notorietà Storica e Memoria</h4>
+        <p>
+          Ai sensi degli artt. 96 e 97 della Legge 22 aprile 1941, n. 633 sul Diritto d'Autore, il ritratto di persona notoria può essere riprodotto senza consenso quando la riproduzione è giustificata dalla notorietà, dall'ufficio pubblico ricoperto o da scopi scientifici, didattici o culturali, purché non rechi pregiudizio all'onore, alla reputazione o al decoro della persona stessa.
+        </p>
+
+        <h4>4. Uso Descrittivo dei Marchi (Nominative Fair Use)</h4>
+        <p>
+          I loghi, marchi e segni distintivi menzionati appartengono ai legittimi proprietari. Il loro richiamo è operato con finalità puramente descrittiva e documentale delle imprese storiche fondate o guidate da Silvio Berlusconi nel corso della sua vita.
+        </p>
+
+        <h4>5. Diritti dell'Interessato e Contatti di Rimozione (Notice & Take Down)</h4>
+        <p>
+          Qualora i legittimi aventi diritto o eredi ritenessero che qualsiasi elemento multimediale, citazione o informazione violi i propri diritti morali o patrimoniali, possono richiederne la tempestiva modifica o rimozione inviando una segnalazione. Il titolare provvederà all'immediata verifica e conformazione.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-cookie-accept" id="modalDismissBtn">Ho Compreso</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
