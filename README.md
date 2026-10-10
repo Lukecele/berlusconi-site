@@ -8,6 +8,8 @@ Un portale web e Progressive Web App (PWA) moderno e interattivo dedicato alla f
 [![Live Demo on Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://berlusconi-site.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
+🌐 **Sito Live su Vercel**: [https://berlusconi-site.vercel.app](https://berlusconi-site.vercel.app)
+
 ---
 
 ## ✨ Funzionalità Principali
