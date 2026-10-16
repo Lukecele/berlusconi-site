@@ -242,6 +242,28 @@ img {
   box-shadow: 0 6px 22px rgba(249, 115, 22, 0.35);
 }
 
+.nav-github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.nav-github-link:hover {
+  background: rgba(245, 158, 11, 0.25);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+}
+
 /* Mobile Hamburger Toggle */
 .mobile-toggle {
   display: none;
@@ -1391,6 +1413,18 @@ img {
   align-items: center;
   font-size: 0.82rem;
   color: var(--text-dim);
+}
+
+.footer-credit-link {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(245, 158, 11, 0.5);
+  transition: var(--transition-smooth);
+}
+
+.footer-credit-link:hover {
+  color: var(--accent-gold-light);
+  text-decoration-color: var(--accent-gold-light);
 }
 
 .back-to-top {
