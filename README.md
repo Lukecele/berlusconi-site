@@ -52,7 +52,7 @@ Il progetto rispetta rigorosamente la legislazione italiana ed europea sulla tut
 1. **Licenza Software Open Source (MIT):**
    L'architettura software del sito (HTML5, CSS3, JavaScript Vanilla, manifest PWA e Service Worker) è rilasciata sotto **Licenza Open Source MIT**, gratuita, libera e replicabile da chiunque per scopi educativi, personali o di sviluppo. Consultare il file [LICENSE](LICENSE).
 
-2. **Finalità Culturale, Storiografica & 100% No-Profit:**
+2. **Finalità Storica, Celebrativa & 100% No-Profit:**
    Il portale non persegue finalità lucrative, commerciali o pubblicitarie. L'opera è inquadrata nei principi di libertà di manifestazione del pensiero, ricerca storica e diritto di cronaca (**Art. 21 Cost.** e **Artt. 65 e 70 Legge 633/1941**).
 
 3. **Diritto all'Immagine di Personaggio Notorio (Artt. 96-97 L. 633/1941):**

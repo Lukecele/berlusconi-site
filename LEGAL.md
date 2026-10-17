@@ -10,7 +10,7 @@
 
 ## 1. Natura del Progetto e Assenza di Finalità di Lucro (100% No-Profit)
 
-Il presente portale è un'opera web autonoma a carattere puramente **culturale, storiografico, didattico e motivazionale**, finalizzata all'analisi della comunicazione, della retorica pubblica e dell'approccio motivazionale di una delle figure centrali della storia repubblicana e imprenditoriale italiana recente.
+Il presente portale è un'opera web autonoma a carattere puramente **storico, celebrativo, culturale e motivazionale**, finalizzata all'analisi della comunicazione, della retorica pubblica e dell'approccio motivazionale di una delle figure centrali della storia repubblicana e imprenditoriale italiana recente.
 
 Il portale:
 - Non persegue alcun fine di lucro, diretto o indiretto;
