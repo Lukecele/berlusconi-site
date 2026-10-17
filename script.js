@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const openPrivacyBtn = document.getElementById('openPrivacyBtn');
   const openCookieBtn = document.getElementById('openCookieBtn');
   const openCopyrightBtn = document.getElementById('openCopyrightBtn');
+  const openLicenseBtn = document.getElementById('openLicenseBtn');
 
   function openLegalModal(targetId) {
     if (!legalModalOverlay) return;
@@ -261,6 +262,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (openPrivacyBtn) openPrivacyBtn.addEventListener('click', () => openLegalModal('legal-privacy'));
   if (openCookieBtn) openCookieBtn.addEventListener('click', () => openLegalModal('legal-cookies'));
   if (openCopyrightBtn) openCopyrightBtn.addEventListener('click', () => openLegalModal('legal-copyright'));
+  if (openLicenseBtn) openLicenseBtn.addEventListener('click', () => openLegalModal('legal-license'));
   if (cookieBannerLink) cookieBannerLink.addEventListener('click', () => openLegalModal('legal-cookies'));
 
   if (closeLegalModal) closeLegalModal.addEventListener('click', closeLegalModalDialog);
