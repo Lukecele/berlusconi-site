@@ -102,25 +102,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     allQuotes = [
       {
         quote: "Da ogni male deve nascere un gran bene. Da ogni male deve venire un entusiasmo maggiore, una speranza maggiore, una grande voglia di riuscire e di conseguire il proprio traguardo!",
-        context: "Il discorso motivazionale sulla resilienza e la capacità di trasformare le prove della vita in slancio.",
+        context: "Discorso motivazionale sulla resilienza e la capacità di trasformare le avversità in slancio vitale.",
         category: "Determinazione",
         icon: "flame"
       },
       {
         quote: "Chi ci crede combatte, chi ci crede supera tutti gli ostacoli, chi ci crede vince!",
-        context: "Il celebre mantra rivolto a collaboratori e sportivi.",
+        context: "Lo storico mantra motivazionale rivolto a collaboratori e sportivi prima delle grandi sfide.",
         category: "Determinazione",
         icon: "trophy"
       },
       {
-        quote: "Lo dovete sempre avere il sole in tasca e tirarlo fuori al momento giusto. Offrirlo con un sorriso sincero a tutte le persone che incontrate.",
-        context: "La regola di vita per ispirare fiducia e generosità.",
+        quote: "Dovete sempre avere il sole in tasca e tirarlo fuori al momento giusto, per donarlo, con un sorriso, a tutte le persone con cui venite in contatto.",
+        context: "La celebre regola di vita per trasmettere fiducia, calore umano ed energia positiva.",
         category: "Visione di Vita",
         icon: "sun"
       },
       {
-        quote: "Un imprenditore, un leader, ha il dovere morale dell'ottimismo.",
-        context: "Discorso sul valore propulsivo della visione positiva nel lavoro.",
+        quote: "Siate positivi, siate ottimisti. L’imprenditore ha il dovere dell’ottimismo, con il pessimismo non si va da nessuna parte!",
+        context: "Discorso al Convegno di Confindustria a Vicenza (18 marzo 2006).",
         category: "Leadership",
         icon: "sparkles"
       }

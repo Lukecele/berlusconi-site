@@ -1,37 +1,73 @@
 [
   {
     "quote": "Da ogni male deve nascere un gran bene. Da ogni male deve venire un entusiasmo maggiore, una speranza maggiore, una grande voglia di riuscire e di conseguire il proprio traguardo!",
-    "context": "Il discorso motivazionale sulla resilienza e la capacità di trasformare i colpi della vita in forza motrice.",
+    "context": "Discorso motivazionale sulla resilienza e la capacità di trasformare le avversità in slancio vitale.",
     "category": "Determinazione",
     "icon": "flame"
   },
   {
     "quote": "Chi ci crede combatte, chi ci crede supera tutti gli ostacoli, chi ci crede vince!",
-    "context": "Il celebre mantra rivolto a sportivi, collaboratori e imprenditori prima delle grandi sfide.",
+    "context": "Lo storico mantra motivazionale rivolto a collaboratori e sportivi prima delle grandi sfide.",
     "category": "Determinazione",
     "icon": "trophy"
   },
   {
-    "quote": "Lo dovete sempre avere il sole in tasca e tirarlo fuori al momento giusto. Offrirlo con un sorriso sincero a tutte le persone che incontrate.",
-    "context": "La regola di vita e di generosità per ispirare e trasmettere fiducia agli altri.",
-    "category": "Visione di Vita",
-    "icon": "sun"
+    "quote": "Ponetevi sempre traguardi ambiziosi, talmente grandi che qualcuno possa perfino sorriderne o considerarli impossibili. Bisogna puntare sempre al dieci, e persino alla lode!",
+    "context": "Discorso al 1º Congresso Nazionale dei Giovani (11 dicembre 1999) sull'ambizione.",
+    "category": "Determinazione",
+    "icon": "compass"
   },
   {
-    "quote": "Un imprenditore, un leader, ha il dovere morale dell'ottimismo. L'ottimismo è l'energia pura che trasforma le idee in realtà.",
-    "context": "Discorso sul valore propulsivo della positività contro la rassegnazione.",
+    "quote": "Siate positivi, siate ottimisti. L’imprenditore ha il dovere dell’ottimismo, con il pessimismo non si va da nessuna parte!",
+    "context": "Discorso al Convegno di Confindustria a Vicenza (18 marzo 2006) sul dovere della fiducia.",
     "category": "Leadership",
     "icon": "sparkles"
   },
   {
-    "quote": "Dobbiamo diventare la squadra più forte del mondo: non basta vincere, dobbiamo convincere dominando il campo con eleganza e rispetto.",
-    "context": "Prima riunione a Milanello nel 1986: l'inizio della leggenda dei 29 trofei.",
+    "quote": "L'Italia è il Paese che amo. Qui ho le mie radici, le mie speranze, i miei orizzonti. Qui ho imparato, da mio padre e dalla vita, il mio mestiere di imprenditore.",
+    "context": "Dallo storico discorso di discesa in campo (26 gennaio 1994).",
+    "category": "Leadership",
+    "icon": "flag"
+  },
+  {
+    "quote": "Dovete sempre avere il sole in tasca e tirarlo fuori al momento giusto, per donarlo, con un sorriso, a tutte le persone con cui venite in contatto.",
+    "context": "La celebre regola di vita per trasmettere fiducia, calore umano ed energia positiva.",
+    "category": "Visione di Vita",
+    "icon": "sun"
+  },
+  {
+    "quote": "La libertà è l'essenza stessa dell'uomo. Senza la libertà non c'è possibilità di realizzare ciò che di buono e di creativo c'è in ciascuno di noi.",
+    "context": "Riflessione sul valore incondizionato della libertà individuale e d'intrapresa.",
+    "category": "Visione di Vita",
+    "icon": "heart"
+  },
+  {
+    "quote": "Il Milan deve vincere, ma deve anche convincere giocando bene e offrendo spettacolo.",
+    "context": "La filosofia del bel gioco e della vittoria introdotta alla presidenza del Milan dal 1986.",
     "category": "Traguardi Sportivi",
     "icon": "shield"
   },
   {
-    "quote": "Quando tutti ti dicono che è impossibile, è esattamente quello il segnale inequivocabile che vale la pena cominciare e dare tutto se stessi.",
-    "context": "Sulla nascita della televisione commerciale libera e plurale in Italia.",
+    "quote": "Domani sogneremo altri traguardi, inventeremo altre sfide, cercheremo altre vittorie. Che valgano a realizzare ciò che di buono, di forte, di vero c'è in noi.",
+    "context": "Dalla lettera del 17 dicembre 1989 dopo il trionfo nella Coppa Intercontinentale a Tokyo.",
+    "category": "Traguardi Sportivi",
+    "icon": "award"
+  },
+  {
+    "quote": "Tutte le cose di cui mi occupo sono profane; ma il Milan è sacro.",
+    "context": "Dichiarazione del 1988 sulla passione autentica e viscerale per i colori rossoneri.",
+    "category": "Traguardi Sportivi",
+    "icon": "star"
+  },
+  {
+    "quote": "Io sono semplicemente un imprenditore che fa miracoli.",
+    "context": "Dall'intervista a Capital (1981) durante la creazione della tv commerciale in Italia.",
+    "category": "Innovazione",
+    "icon": "zap"
+  },
+  {
+    "quote": "Come si riconosce un vero imprenditore? Dalle bollicine d'intelligenza che devono uscirgli dagli occhi.",
+    "context": "Dall'intervista del 1981 sulla vocazione all'innovazione e allo sviluppo d'impresa.",
     "category": "Innovazione",
     "icon": "rocket"
   }
