@@ -13,6 +13,10 @@ Un portale web e Progressive Web App (PWA) moderno e interattivo dedicato alla f
 
 🌐 **Sito Live su Vercel**: [https://berlusconi-site.vercel.app](https://berlusconi-site.vercel.app)
 
+> [!TIP]
+> **Ti piace questo portale su Silvio Berlusconi?**  
+> Se apprezzi l'archivio multimediale, i video e l'ottimismo del "sole in tasca", **lascia una ⭐ Stella su GitHub** in alto a destra! Supporta il progetto open-source e la conservazione storica.
+
 ---
 
 ## ✨ Funzionalità Principali
